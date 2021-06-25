@@ -1,9 +1,5 @@
-# @react/use-progressive-list
+# @react-util-hooks
 
-React Hook to help progressively display lists
-
-
-
-
+Collection of React helper Hooks
 
 ## ❗❗ This is a work in progress and not ready for use ❗❗
