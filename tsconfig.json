@@ -49,6 +49,6 @@
     // add some style to errors and messages
     "pretty": true
   },
-  "include": ["src", "index.ts"],
+  "include": ["packages"],
   "exclude": ["node_modules", "**/tests/**"]
 }
