@@ -11,7 +11,6 @@ export interface ProgressiveListTools {
 
 export const useProgressiveList = ({ initialCount }: ProgressiveListParams): ProgressiveListTools => {
   const [displayCount] = useState(initialCount)
-
   return { displayCount }
 }
 

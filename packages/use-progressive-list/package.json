@@ -1,0 +1,64 @@
+{
+  "name": "@react-util-hooks/use-progressive-list",
+  "version": "0.0.1",
+  "author": "bikk-uk",
+  "license": "MIT",
+  "description": "React Hook to help progressively display lists",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "reactjs",
+    "hook",
+    "hooks",
+    "list",
+    "progressive"
+  ],
+  "homepage": "https://github.com/bikk-uk/react-util-hooks#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bikk-uk/react-util-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bikk-uk/react-util-hooks/issues"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "scripts": {
+    "test": "jest --coverage",
+    "test-watch": "jest --watch",
+    "test-watch-all": "jest --watchAll",
+    "lint": "tsc --noEmit && eslint '*/**/*.{ts,tsx}' --quiet --fix",
+    "build": "tsc",
+    "clean": "rm -rf dist/*",
+    "release": "yarn prepublishOnly && yarn lint",
+    "prepublishOnly": "yarn && yarn clean && yarn build",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.1",
+    "snyk": "^1.630.0",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.3.2"
+  },
+  "snyk": true
+}
